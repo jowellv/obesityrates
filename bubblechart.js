@@ -75,7 +75,6 @@ var generateNodes = function() {
                 .style("top", yPosition + "px")
                 .select("#label_location")
                 .text(d.location_name)
-            console.log(yPosition)
             d3.select("#tooltip").select("#label_value")
               .text(parseFloat(Math.round(d.mean * 10000) / 100).toFixed(2))
             d3.select("#tooltip").classed("hidden", false);
