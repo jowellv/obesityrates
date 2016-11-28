@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Obesity Rates Around the World</title>
+        <script type="text/javascript" src="d3/d3.v3.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <h1>Obesity Rates Around the World in
+            <select id="year" onchange="filterData(this);">
+            </select>
+        </h1>
+        <div>
+            <div id="tooltip" class="hidden">
+    			<p><span id="label_location">location</span></p>
+    			<p><span id="label_value">mean</span>%</p>
+    		</div>
+            <div id="graph"></div>
+        </div>
+        <script type="text/javascript" src="bubblechart.js"></script>
+    </body>
+</html>
